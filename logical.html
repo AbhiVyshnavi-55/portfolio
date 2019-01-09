@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="about" content="project">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/modren.css" rel="stylesheet">
+	<link href="css/java.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/start.css">
+    <title>PROJECT</title>
+  </head>
+
+  <body>
+	<ul>
+		<li><a class="active" href="#">HOME</a></li>
+		<li><a href="#">APPS</a></li>
+		<li><a href="#">ICONS</a></li>
+		<li><a href="#">NAMES</a></li>
+		<li><a href="#">TAGLINE</a></li>
+		<li><a href="#">HOME-PAGES</a></li>
+		<li><a href="#">STYLE</a></li>
+	</UL>
+	</body>
+  <body>
+    <header>
+      <div class="container">
+        <div class="rightCol"style="font-size:1px">
+          <u><b><h1 class="name"style="color:darkblack"><strong>APPS WORLD</strong></h1></b></u>
+        </div>
+      </div>
+     </header>
+    <main>
+      <div class="container">
+        <div class="cover">
+        <body style="text-align:center">
+			<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img src="image.jpg" style="width:400px">
+		    </div>
+			<div class="mySlides fade">
+				<img src="image11.png" style="width:400px">
+			</div>
+			<div class="mySlides fade">
+				<img src="image22.png" style="width:500px">
+			</div>
+			<div class="mySlides fade">
+				<img src="image33.jpg" style="width:400px">
+		    </div>
+			<div class="mySlides fade">
+				<img src="image44.png" style="width:400px">
+		    </div>
+			<div class="mySlides fade">
+				<img src="image55.jpeg" style="width:400px">
+		    </div>
+			<div class="mySlides fade">
+				<img src="image66.jpg" style="width:400px">
+		    </div>
+		  </div>
+		  <br>
+		  <div style="text-align:center">
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+			<span class="dot"></span> 			
+			<span class="dot"></span> 			
+			<span class="dot"></span> 			
+			<span class="dot"></span> 			
+			<span class="dot"></span> 			
+		  </div>
+			<script>
+			var slideIndex = 0;
+				showSlides();
+			function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+				}
+				slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}    
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+				setTimeout(showSlides, 2000);
+				}
+		</script>
+	</body>
+        </div>
+        <h2 class="heading"><span><strong>SOME OF MY APPS</strong></span></h2>
+        <div id="items">
+          <article class="portfolio-item">
+            <img src="image1.gif" alt="Monkey">
+            <div class="text_block">
+              <h1 style="color:blue;text-align:center">GOOGLE</h1>
+              <p>My Life and My Views </p>
+            </div>
+          </article>
+          <article class="portfolio-item">
+            <img src="image2.gif" alt="Cat">
+            <div class="text_block">
+              <h1 style="color:red;text-align:center">YOUTUBE</h1>
+              <p>Broadcast Yourself</p>
+            </div>
+          </article>
+          <article class="portfolio-item">
+            <img src="image3.gif" alt="Bear">
+            <div class="text_block">
+              <h1 style="color:darkviolet;text-align:center">VOOT</h1>
+              <p>Be Moved</p>
+            </div>
+          </article>
+          <article class="portfolio-item">
+            <img src="image5.gif" alt="Tiger">
+            <div class="text_block">
+              <h1 style="color:crimson;text-align:center">SHOPPING</h1>
+              <p>Unbox Zindagi</p>
+            </div>
+          </article>
+          <article class="portfolio-item">
+            <img src="image4.gif" alt="Panda">
+            <div class="text_block">
+              <h1 style="color:darkblack;text-align:center">HOTSTAR</h1>
+              <p>Scale,Politics and Nepotism</p>
+            </div>
+          </article>
+          <article class="portfolio-item">
+            <img src="image6.gif" alt="Whale">
+            <div class="text_block">
+              <h1 style="color:green;text-align:center">G-apps</h3>
+              <p>Don't be Evil</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
